@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berry - Tu Tienda Favorita</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #ff69b4;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: 300px;
+            background-image: url('tu-imagen-de-fondo.jpg'); /* Cambia esta URL por la imagen de tu tienda */
+            background-size: cover;
+            background-position: center;
+        }
+
+        nav {
+            background-color: #ff1493;
+            padding: 1rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .content {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .notes-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .note-card {
+            border: 1px solid #ddd;
+            padding: 1rem;
+            border-radius: 8px;
+        }
+
+        .note-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+        }
+
+        .signup-button {
+            display: block;
+            width: max-content;
+            margin: 2rem auto;
+            padding: 1rem 2rem;
+            background-color: #ff1493;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .signup-button:hover {
+            background-color: #ff69b4;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .company-info {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Berry</h1>
+    </header>
+
+    <div class="hero-image"></div>
+
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main class="content">
+        <section class="notes-section">
+            <div class="note-card">
+                <img src="producto1.jpg" alt="Producto 1"> <!-- Cambia esta imagen por una real -->
+                <h3>Producto Destacado 1</h3>
+                <p>Descripción del producto destacado. Aquí puedes escribir detalles importantes sobre el producto.</p>
+            </div>
+            <div class="note-card">
+                <img src="producto2.jpg" alt="Producto 2"> <!-- Cambia esta imagen por una real -->
+                <h3>Producto Destacado 2</h3>
+                <p>Descripción del producto destacado. Aquí puedes escribir detalles importantes sobre el producto.</p>
+            </div>
+            <div class="note-card">
+                <img src="producto3.jpg" alt="Producto 3"> <!-- Cambia esta imagen por una real -->
+                <h3>Producto Destacado 3</h3>
+                <p>Descripción del producto destacado. Aquí puedes escribir detalles importantes sobre el producto.</p>
+            </div>
+        </section>
+
+        <a href="inscripcion.html" class="signup-button">Inscríbete Ahora</a>
+    </main>
+
+    <footer>
+        <div class="company-info">
+            <h2>Berry</h2>
+            <p>Dirección: Calle Principal #123</p>
+            <p>Teléfono: (123) 456-7890</p>
+            <p>Email: contacto@berry.com</p>
+            <p>Horario: Lunes a Viernes 9:00 - 18:00</p>
+        </div>
+    </footer>
+</body>
+</html>
