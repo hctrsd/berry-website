@@ -21,10 +21,10 @@
 
         .hero-image {
             width: 100%;
-            height: 300px;
-            background-image: url('tu-imagen-de-fondo.jpg'); /* Cambia esta URL por la imagen de tu tienda */
-            background-size: cover;
+            height: 700px;
+            background-image: url('https://images.pexels.com/photos/975771/pexels-photo-975771.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); /* Cambia esta URL por la imagen de tu tienda */
             background-position: center;
+         
         }
 
         nav {
@@ -49,26 +49,31 @@
             max-width: 1200px;
             margin: 2rem auto;
             padding: 0 1rem;
+            
         }
 
         .notes-section {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: 1fr(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
             margin-bottom: 2rem;
+            
+            
         }
 
         .note-card {
             border: 1px solid #ddd;
-            padding: 1rem;
-            border-radius: 8px;
+    padding: 1rem;
+    border-radius: 8px;
+            background-color: aquamarine;
         }
 
         .note-card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 4px;
+            width: 100%;            /* Que la imagen ocupe todo el ancho del contenedor */
+            height: 500px;          /* Ajustar la altura */
+            object-fit: contain;    /* Mantener la proporción de la imagen */
+            margin: 0 auto;         /* Centrado */
+            display: block;         /* Asegura que el margen funcione */
             margin-bottom: 1rem;
         }
 
@@ -87,6 +92,13 @@
 
         .signup-button:hover {
             background-color: #ff69b4;
+        }
+        h3 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
         }
 
         footer {
@@ -121,23 +133,30 @@
     <main class="content">
         <section class="notes-section">
             <div class="note-card">
-                <img src="producto1.jpg" alt="Producto 1"> <!-- Cambia esta imagen por una real -->
+                <img src="https://images.pexels.com/photos/19768831/pexels-photo-19768831/free-photo-of-naturaleza-bosque-pared-muro.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Producto 1">
+             <!-- Cambia esta imagen por una real -->
                 <h3>Producto Destacado 1</h3>
+                <br>
                 <p>Descripción del producto destacado. Aquí puedes escribir detalles importantes sobre el producto.</p>
             </div>
             <div class="note-card">
-                <img src="producto2.jpg" alt="Producto 2"> <!-- Cambia esta imagen por una real -->
-                <h3>Producto Destacado 2</h3>
+                <img src="https://images.pexels.com/photos/19768831/pexels-photo-19768831/free-photo-of-naturaleza-bosque-pared-muro.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Producto 1">
+             <!-- Cambia esta imagen por una real -->
+                <h3>Producto Destacado 1</h3>
+                <br>
                 <p>Descripción del producto destacado. Aquí puedes escribir detalles importantes sobre el producto.</p>
             </div>
             <div class="note-card">
-                <img src="producto3.jpg" alt="Producto 3"> <!-- Cambia esta imagen por una real -->
-                <h3>Producto Destacado 3</h3>
+                <img src="https://images.pexels.com/photos/19768831/pexels-photo-19768831/free-photo-of-naturaleza-bosque-pared-muro.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Producto 1">
+             <!-- Cambia esta imagen por una real -->
+                <h3>Producto Destacado 1</h3>
+                <br>
                 <p>Descripción del producto destacado. Aquí puedes escribir detalles importantes sobre el producto.</p>
             </div>
         </section>
+        <h3>Si estas interesado en nuestros recorridos.</h3>
 
-        <a href="inscripcion.html" class="signup-button">Inscríbete Ahora</a>
+        <a href="public/inscripcion.html" class="signup-button">Inscríbete Ahora</a>
     </main>
 
     <footer>
